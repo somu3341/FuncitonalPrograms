@@ -9,7 +9,7 @@ namespace FunctionalPrograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choose an option to execute\n1.Flip coin \n2.Leap Year \n3.Power Of 2 \n4.Exit");
+                Console.WriteLine("Choose an option to execute\n1.Flip coin \n2.Leap Year \n3.Power Of 2 \n4.Harmonic Number \n5.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -32,6 +32,12 @@ namespace FunctionalPrograms
                         powerof.Power(power);
                         break;
                     case 4:
+                        Console.WriteLine("Enter value");
+                        int number = Convert.ToInt32(Console.ReadLine());
+                        HarmonicNumber harmonic = new HarmonicNumber();
+                        harmonic.Harm(number);
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
